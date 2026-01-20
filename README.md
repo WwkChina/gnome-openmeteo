@@ -6,6 +6,8 @@ The extension is highly configurable and operates independently of GNOME Weather
 
 This project is not affiliated with or endorsed by Open-Meteo.
 
+[![Screenshot](./screenshot.png)](./screenshot.png)
+
 ---
 
 ## Features
