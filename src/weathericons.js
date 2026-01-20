@@ -89,7 +89,7 @@ export function getIconName(provider, key, isNight, useSymbolic)
 {
   let name;
 
-  // 只支持 Open-Meteo
+  // Only support Open-Meteo
   if (typeof key === "number")
     name = OpenMeteoIconMap[key];
 

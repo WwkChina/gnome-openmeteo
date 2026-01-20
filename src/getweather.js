@@ -14,20 +14,9 @@ import { getSoupSession } from "./myloc.js";
 import { getIconName, gettextCondition } from "./weathericons.js";
 
 /**
- * Open-Meteo 不需要 key，这里保留结构以兼容 extension.js
+Keep the structure to remain compatible with extension.js
  */
 export const DEFAULT_KEYS = [];
-
-// export class TooManyReqError extends Error
-// {
-//   provider;
-//   constructor(provider)
-//   {
-//     super(`Provider ${getWeatherProviderName(provider)} has received too many requests.`);
-//     this.provider = provider;
-//     this.name = "TooManyReqError";
-//   }
-// }
 
 /**
  * @enum {number}

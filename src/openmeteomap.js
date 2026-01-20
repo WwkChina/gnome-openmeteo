@@ -204,7 +204,7 @@ function populateTodaysUI() {
 
       const now = new Date();
 
-      // ★ 新增：向上取整到下一个整点
+      // Round down to the next whole hour
       const aligned = new Date(now);
       aligned.setMinutes(0, 0, 0);
       if (now.getMinutes() !== 0 || now.getSeconds() !== 0) {
@@ -220,7 +220,6 @@ function populateTodaysUI() {
           let fc = weather.forecastDayHour(day, h);
           if (!fc) continue;
 
-          // ★ 核心判断：02:30 命中 03:00
           if (fc.getStart() >= aligned || items.length > 0) {
             items.push(fc);
             if (items.length >= 4) break outer;
@@ -228,7 +227,7 @@ function populateTodaysUI() {
         }
       }
 
-      // 极端兜底：一个都没命中（理论上不会发生）
+      // Extreme fallback: none of the above applies (theoretically should not happen)
       if (items.length === 0) {
         let n0 = weather.forecastHourCount(0);
         for (let i = 0; i < Math.min(4, n0); i++) {
@@ -237,7 +236,7 @@ function populateTodaysUI() {
         }
       }
 
-      // 填 UI
+      // Populate the UI
       for (let i = 0; i < 4; i++) {
         let ui = this._todays_forecast[i];
         if (!ui) continue;
@@ -266,7 +265,7 @@ function populateTodaysUI() {
         let showers = w.getShowers?.() ?? 0;
         let snow = w.getSnowfall?.() ?? 0;
 
-        // 默认隐藏
+        // Hidden by default
         ui.PrecipBox.hide();
         ui.PrecipText.text = "";
         // ui.PrecipIcon.set_gicon(null);
@@ -307,15 +306,12 @@ function populateForecastUI() {
 
       const HOURS_PER_DAY = 24;
 
-      // 你 UI rebuildFutureWeatherUi(cnt) 里是 cnt 天：i = 0..cnt-1
-      // 这里按同样的 i 填；每一天最多填 24 条
       let dayCount = Math.min(this._days_forecast, weather.forecastDayCount());
 
       for (let i = 0; i < dayCount; i++) {
         let forecastUi = this._forecast[i];
         if (!forecastUi) break;
 
-        // Day label：取当天第 0 条的 start 时间来决定显示星期/明天
         let first = weather.forecastDayHour(i, 0);
         if (first) {
           let forecastDate = first.getStart();
@@ -324,7 +320,6 @@ function populateForecastUI() {
           else forecastUi.Day.text = "\n" + this.getLocaleDay(forecastDate.getDay());
         }
 
-        // 填 24 个小时格子
         let hourCount = Math.min(HOURS_PER_DAY, weather.forecastHourCount(i));
         for (let j = 0; j < hourCount; j++) {
           if (!forecastUi[j]) continue;
@@ -347,7 +342,7 @@ function populateForecastUI() {
           let showers = w.getShowers?.() ?? 0;
           let snow = w.getSnowfall?.() ?? 0;
 
-          // 默认隐藏
+          // Hidden by default
           forecastUi[j].PrecipBox.hide();
           forecastUi[j].PrecipText.text = "";
           // forecastUi[j].PrecipIcon.set_gicon(null);
