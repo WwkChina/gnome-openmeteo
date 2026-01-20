@@ -1,10 +1,10 @@
-# Open-Meteo
+# Open-Meteo GNOME
 
-Open-Meteo is a GNOME Shell extension for displaying current weather conditions and short-term forecasts for a user-selected location.
+Open-Meteo GNOME is an **unofficial, community-maintained** GNOME Shell extension for displaying current weather conditions and short-term forecasts for a user-selected location.
 
-The extension is highly configurable and operates independently of GNOME Weather. Weather data is retrieved from the Open-Meteo API, including multi-day forecasts with 1-hour intervals.
+The extension is highly configurable and operates independently of GNOME Weather. Weather data is retrieved from the [Open-Meteo](https://open-meteo.com/) API, including multi-day forecasts with 1-hour intervals.
 
-This project is provided as-is.
+This project is not affiliated with or endorsed by Open-Meteo.
 
 ---
 
