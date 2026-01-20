@@ -1,28 +1,5 @@
-# ignore compiled schemas
-*.compiled
-
-# ignore compiled po files
-*.mo
-
-# ignore build directory
+schemas/gschemas.compiled
+po/*.mo
+releases
 _build
-
-# ignore generated archive files
-releases/
-
-# ignore files with ~ attached
-*~
-
-# Dependency directories
-node_modules/
-
-# Optional npm cache directory
-.npm
-
-# Optional eslint cache
-.eslintcache
-
-# For Eslint Package
-package-lock.json
-package.json
 
