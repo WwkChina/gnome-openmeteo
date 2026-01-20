@@ -348,8 +348,6 @@ class GeneralPage extends Adw.PreferencesPage
         }
 
         this._settings.reset("frozen");
-
-        this._window.close();
       }
     );
   }

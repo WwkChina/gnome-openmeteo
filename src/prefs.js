@@ -22,49 +22,42 @@ import { LayoutPage } from "./preferences/layoutPage.js";
 import { LocationsPage } from "./preferences/locationsPage.js";
 import { AboutPage } from "./preferences/aboutPage.js";
 
-export default class OpenMeteoPreferences extends ExtensionPreferences {
-  constructor(metadata) {
-    super(metadata);
-  }
-
+export default class OpenMeteoPreferences extends ExtensionPreferences { 
   fillPreferencesWindow(window) {
-    let iconTheme = Gtk.IconTheme.get_for_display(Gdk.Display.get_default());
-    if (!iconTheme.get_search_path().includes(this.metadata.path + "/media")) {
-      iconTheme.add_search_path(this.metadata.path + "/media");
+    // ---- Icon theme ----
+    const display = Gdk.Display.get_default();
+    const iconTheme = Gtk.IconTheme.get_for_display(display);
+
+    const mediaPath = `${this.metadata.path}/media`;
+    if (!iconTheme.get_search_path().includes(mediaPath)) {
+      iconTheme.add_search_path(mediaPath);
     }
 
-    window._settings = this.getSettings();
+    // ---- Settings ----
+    const settings = this.getSettings();
 
-    const generalPage = new GeneralPage(this.metadata, window._settings, window);
-    const layoutPage = new LayoutPage(this.metadata, window._settings);
-    const locationsPage = new LocationsPage(
-      this.metadata,
-      window._settings,
-      window
-    );
-    const aboutPage = new AboutPage(this.metadata, window._settings, window);
+    // ---- Pages ----
+    window.add(new GeneralPage(this.metadata, settings, window));
+    window.add(new LayoutPage(this.metadata, settings));
+    window.add(new LocationsPage(this.metadata, settings, window));
+    window.add(new AboutPage(this.metadata, settings, window));
 
-    let prefsWidth = window._settings.get_int("prefs-default-width");
-    let prefsHeight = window._settings.get_int("prefs-default-height");
+    // ---- Window properties ----
+    const prefsWidth = settings.get_int("prefs-default-width");
+    const prefsHeight = settings.get_int("prefs-default-height");
 
     window.set_default_size(prefsWidth, prefsHeight);
     window.set_search_enabled(true);
 
-    window.add(generalPage);
-    window.add(layoutPage);
-    window.add(locationsPage);
-    window.add(aboutPage);
-
+    // ---- Save size on close ----
     window.connect("close-request", () => {
-      let currentWidth = window.default_width;
-      let currentHeight = window.default_height;
-      // Remember user window size adjustments.
-      if (currentWidth !== prefsWidth || currentHeight !== prefsHeight)
-      {
-        window._settings.set_int("prefs-default-width", currentWidth);
-        window._settings.set_int("prefs-default-height", currentHeight);
+      const [width, height] = window.get_default_size();
+
+      if (width > 0 && height > 0) {
+        settings.set_int("prefs-default-width", width);
+        settings.set_int("prefs-default-height", height);
       }
-      window.destroy();
+      return false;
     });
   }
 }

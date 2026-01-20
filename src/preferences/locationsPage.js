@@ -329,9 +329,6 @@ class LocationsPage extends Adw.PreferencesPage
       this._window.add_toast(toast);
       _dialog.destroy();
     });
-    _dialog.connect("close-request", () => {
-      _dialog.destroy();
-    });
     return 0;
   }
 
@@ -500,9 +497,6 @@ class LocationsPage extends Adw.PreferencesPage
       _dialog.close();
       return 0;
     });
-    _dialog.connect("close-request", () => {
-      _dialog.destroy();
-    });
     return 0;
   }
 
@@ -571,10 +565,7 @@ class LocationsPage extends Adw.PreferencesPage
       }
       _dialog.close();
       return;
-    });
-    _dialog.connect("close-request", () => {
-      _dialog.destroy();
-    });
+    }); 
   }
 
   _locationsChanged(current)

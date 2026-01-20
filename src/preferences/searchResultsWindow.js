@@ -85,7 +85,6 @@ class SearchResultsWindow extends Adw.PreferencesWindow
       this.close();
       return 0;
     });
-    this.connect("close-request", this._destroy.bind(this));
   }
 
   async _findLocation()
@@ -303,12 +302,6 @@ class SearchResultsWindow extends Adw.PreferencesWindow
         _('No results found when searching for "%s".').format(this._location)
       );
     }
-    return;
-  }
-
-  _destroy()
-  {
-    this.destroy();
     return;
   }
 }

@@ -169,9 +169,7 @@ class OpenMeteoMenuButton extends PanelMenu.Button {
     }
 
     this.add_child(topBox);
-    if (Main.panel._menus === undefined)
-      Main.panel.menuManager.addMenu(this.menu);
-    else Main.panel._menus.addMenu(this.menu);
+    Main.panel.menuManager.addMenu(this.menu);
 
     this.loadConfig().then(() =>
     {

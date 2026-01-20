@@ -4,7 +4,9 @@
     "shell-version": [
         "45",
         "46",
-        "47"
+        "47",
+        "48",
+        "49"
     ],
     "url": "https://github.com/WwkChina",
     "uuid": "openmeteo-extension@wwkchina.github.io",

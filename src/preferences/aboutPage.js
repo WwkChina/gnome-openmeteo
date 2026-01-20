@@ -190,8 +190,13 @@ class AboutPage extends Adw.PreferencesPage {
         }
       }
 
-      let clipboard = widget.get_clipboard();
-      clipboard.set(JSON.stringify(obj));
+      const clipboard = widget.get_clipboard();
+      const text = JSON.stringify(obj);
+
+      if (clipboard.set_text)
+        clipboard.set_text(text);
+      else
+        clipboard.set(text);
 
       let toast = new Adw.Toast({
         title: _("Copied settings JSON to clipboard.")
