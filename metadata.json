@@ -8,7 +8,7 @@
         "48",
         "49"
     ],
-    "url": "https://github.com/WwkChina",
+    "url": "https://github.com/WwkChina/gnome-openmeteo",
     "uuid": "openmeteo-extension@wwkchina.github.io",
     "settings-schema": "org.gnome.shell.extensions.openmeteo",
     "gettext-domain": "gnome-shell-extension-openmeteo",
