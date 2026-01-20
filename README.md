@@ -78,7 +78,7 @@ Restart the GNOME shell:
 
 ### Credits
 
-This project is a fork of Teal Penguin's. See [`AUTHORS`](./AUTHORS) for previous contributor details.
+This project is a fork of [Teal Penguin](https://github.com/romanlefler/gnome-openweather)'s. See [`AUTHORS`](./AUTHORS) for previous contributor details.
 
 ---
 
