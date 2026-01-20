@@ -319,8 +319,8 @@ class AboutPage extends Adw.PreferencesPage {
       _("This program comes with ABSOLUTELY NO WARRANTY.") +
       "\n" +
       _("See the") +
-      ' <a href="https://gnu.org/licenses/old-licenses/gpl-2.0.html">' +
-      _("GNU General Public License, version 2 or later") +
+      ' <a href="https://www.gnu.org/licenses/gpl-3.0.html">' +
+      _("GNU General Public License, version 3 or later") +
       "</a> " +
       _("for details.") +
       "</span>";
