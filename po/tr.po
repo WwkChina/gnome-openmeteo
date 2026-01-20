@@ -1,0 +1,1387 @@
+# Turkish translation for gnome-shell-extension-openmeteo
+# Copyright (C) 2011-2015 Jens Lody
+# This file is distributed under the same license as the gnome-shell-extension-openmeteo package.
+#
+# Orhan Engin OKAY <orhanenginokay@hotmail.com>, 2018
+# Oğuz KARAYEMİŞ <oguzkarayemis@gmail.com>, 2022
+# Sabri Ünal <libreajans@gmail.com>, 2023.
+# Furkan Simsekli <simseklifurkan0@gmail.com>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-shell-extension-openmeteo\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-04-18 09:26-0500\n"
+"PO-Revision-Date: 2024-06-29 22:00+0300\n"
+"Last-Translator: Furkan Simsekli <simseklifurkan0@gmail.com>\n"
+"Language-Team: Turkish\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.1.1\n"
+
+#: src/weathericons.js:292 src/weathericons.js:294 src/weathericons.js:296
+msgid "Not available"
+msgstr "Mevcut değil"
+
+#: src/locs.js:101 src/locs.js:185 src/preferences/locationsPage.js:329
+#: src/preferences/locationsPage.js:393
+#, fuzzy
+msgid "My Location"
+msgstr "Konumum"
+
+#: src/extension.js:248
+msgid "Failed to initialize."
+msgstr "Başlatılamadı."
+
+#: src/extension.js:375
+#, fuzzy, javascript-format
+msgid ""
+"%s does not work without an api-key.\n"
+"Either set the switch to use the extensions default key in the preferences "
+"dialog to on or register at %s and paste your personal key into the "
+"preferences dialog."
+msgstr ""
+"%s api-anahtarı olmadan çalışmaz.\n"
+"İstereniz eklentinin varsayılan anahtarını kullanabilir ya da "
+"%s adresine kayıt olup kendi kişisel anahtarınızı ekleyebilirsiniz."
+
+#: src/extension.js:432
+msgid "Open-Meteo: Imported settings from old extension."
+msgstr "Open-Meteo: Ayarlar eski eklentiden aktarıldı."
+
+#: src/extension.js:745 src/extension.js:758
+#, javascript-format
+msgid "Can not connect to %s"
+msgstr "%s adresine bağlanılamadı"
+
+#: src/extension.js:1044 src/preferences/locationsPage.js:39
+#: src/preferences/locationsPage.js:59
+msgid "Locations"
+msgstr "Konumlar"
+
+#: src/extension.js:1048
+msgid "Reload Weather Information"
+msgstr "Hava Durumunu Yenile"
+
+#: src/extension.js:1066
+msgid "See Online"
+msgstr "Çevrimiçi Görüntüle"
+
+#: src/extension.js:1071
+msgid "Weather Settings"
+msgstr "Hava Durumu Ayarları"
+
+#: src/extension.js:1099
+msgid "Manual refreshes less than 2 minutes apart are ignored!"
+msgstr "2 dakikadan kısa sürelerle yapılan elle yenilemeler göz ardı edilir."
+
+#: src/extension.js:1141
+#, fuzzy, javascript-format
+msgid "Cannot open %s"
+msgstr "%s açılamıyor"
+
+#: src/extension.js:1231 src/preferences/generalPage.js:194
+msgid "°C"
+msgstr "°C"
+
+#: src/extension.js:1234 src/preferences/generalPage.js:195
+msgid "°F"
+msgstr "°F"
+
+#: src/extension.js:1236 src/preferences/generalPage.js:196
+msgid "K"
+msgstr "K"
+
+#: src/extension.js:1238 src/preferences/generalPage.js:197
+msgid "°Ra"
+msgstr "°Ra"
+
+#: src/extension.js:1240 src/preferences/generalPage.js:198
+msgid "°Ré"
+msgstr "°Ré"
+
+#: src/extension.js:1242 src/preferences/generalPage.js:199
+msgid "°Rø"
+msgstr "°Rø"
+
+#: src/extension.js:1244 src/preferences/generalPage.js:200
+msgid "°De"
+msgstr "°De"
+
+#: src/extension.js:1246 src/preferences/generalPage.js:201
+msgid "°N"
+msgstr "°N"
+
+#: src/extension.js:1282
+msgid "Calm"
+msgstr "Sakin"
+
+#: src/extension.js:1283
+msgid "Light air"
+msgstr "Hafif Hava"
+
+#: src/extension.js:1285
+msgid "Light breeze"
+msgstr "Hafif Esinti"
+
+#: src/extension.js:1287
+msgid "Gentle breeze"
+msgstr "Nazik Esinti"
+
+#: src/extension.js:1289
+msgid "Moderate breeze"
+msgstr "Orta Esinti"
+
+#: src/extension.js:1291
+msgid "Fresh breeze"
+msgstr "Serin Esinti"
+
+#: src/extension.js:1293
+msgid "Strong breeze"
+msgstr "Güçlü Esinti"
+
+#: src/extension.js:1295
+msgid "Moderate gale"
+msgstr "Orta Rüzgar"
+
+#: src/extension.js:1297
+msgid "Fresh gale"
+msgstr "Serin Rüzgar"
+
+#: src/extension.js:1299
+msgid "Strong gale"
+msgstr "Güçlü Rüzgar"
+
+#: src/extension.js:1300
+msgid "Storm"
+msgstr "Fırtına"
+
+#: src/extension.js:1302
+msgid "Violent storm"
+msgstr "Şiddetli Fırtına"
+
+#: src/extension.js:1303
+msgid "Hurricane"
+msgstr "Kasırga"
+
+#: src/extension.js:1308
+msgid "Sunday"
+msgstr "Pazar"
+
+#: src/extension.js:1309
+msgid "Monday"
+msgstr "Pazartesi"
+
+#: src/extension.js:1310
+msgid "Tuesday"
+msgstr "Salı"
+
+#: src/extension.js:1311
+msgid "Wednesday"
+msgstr "Çarşamba"
+
+#: src/extension.js:1312
+msgid "Thursday"
+msgstr "Perşembe"
+
+#: src/extension.js:1313
+msgid "Friday"
+msgstr "Cuma"
+
+#: src/extension.js:1314
+msgid "Saturday"
+msgstr "Çumartesi"
+
+#: src/extension.js:1331
+msgid "N"
+msgstr "K"
+
+#: src/extension.js:1332
+msgid "NE"
+msgstr "KD"
+
+#: src/extension.js:1333
+msgid "E"
+msgstr "D"
+
+#: src/extension.js:1334
+msgid "SE"
+msgstr "GD"
+
+#: src/extension.js:1335
+msgid "S"
+msgstr "G"
+
+#: src/extension.js:1336
+msgid "SW"
+msgstr "GB"
+
+#: src/extension.js:1337
+msgid "W"
+msgstr "B"
+
+#: src/extension.js:1338
+msgid "NW"
+msgstr "KB"
+
+#: src/extension.js:1427 src/preferences/generalPage.js:227
+msgid "inHg"
+msgstr "inHg"
+
+#: src/extension.js:1432 src/preferences/generalPage.js:228
+msgid "bar"
+msgstr "bar"
+
+#: src/extension.js:1437 src/preferences/generalPage.js:229
+msgid "Pa"
+msgstr "Pa"
+
+#: src/extension.js:1442 src/preferences/generalPage.js:230
+msgid "kPa"
+msgstr "kPa"
+
+#: src/extension.js:1447 src/preferences/generalPage.js:231
+msgid "atm"
+msgstr "atm"
+
+#: src/extension.js:1452 src/preferences/generalPage.js:232
+msgid "at"
+msgstr "at"
+
+#: src/extension.js:1457 src/preferences/generalPage.js:233
+msgid "Torr"
+msgstr "Torr"
+
+#: src/extension.js:1462 src/preferences/generalPage.js:234
+msgid "psi"
+msgstr "psi"
+
+#: src/extension.js:1467 src/preferences/generalPage.js:235
+msgid "mmHg"
+msgstr "mmHg"
+
+#: src/extension.js:1471 src/preferences/generalPage.js:236
+msgid "mbar"
+msgstr "mbar"
+
+#: src/extension.js:1537 src/preferences/generalPage.js:214
+msgid "m/s"
+msgstr "m/s"
+
+#: src/extension.js:1542 src/preferences/generalPage.js:213
+msgid "mph"
+msgstr "mph"
+
+#: src/extension.js:1547 src/preferences/generalPage.js:212
+msgid "km/h"
+msgstr "km/h"
+
+#: src/extension.js:1556 src/preferences/generalPage.js:215
+msgid "kn"
+msgstr "kn"
+
+#: src/extension.js:1561 src/preferences/generalPage.js:216
+msgid "ft/s"
+msgstr "ft/s"
+
+#: src/extension.js:1628 src/extension.js:1678
+msgid "Loading ..."
+msgstr "Yükleniyor..."
+
+#: src/extension.js:1682
+msgid "Please wait"
+msgstr "Lütfen bekleyin"
+
+#: src/extension.js:1739
+msgid "Feels Like:"
+msgstr "Hissedilen:"
+
+#: src/extension.js:1740
+msgid "Humidity:"
+msgstr "Nem:"
+
+#: src/extension.js:1741
+msgid "Pressure:"
+msgstr "Basınç:"
+
+#: src/extension.js:1742
+msgid "Wind:"
+msgstr "Rüzgar:"
+
+#: src/extension.js:1743
+#, fuzzy
+msgid "Gusts"
+msgstr "Bora:"
+
+#: src/extension.js:1925
+msgid "Tomorrow's Forecast"
+msgstr "Yarının Hava Tahmini"
+
+#: src/extension.js:1926
+#, javascript-format
+msgid "%s Day Forecast"
+msgstr "%s Günlük Hava Tahmini"
+
+#: src/openmeteomap.js:139
+msgid ", "
+msgstr ", "
+
+#: src/openmeteomap.js:238
+msgid "Tomorrow"
+msgstr "Yarın"
+
+#: src/preferences/generalPage.js:28
+#, fuzzy, javascript-format
+msgid "%s Multilingual Support"
+msgstr "%s Çoklu Dil Desteği"
+
+#: src/preferences/generalPage.js:33
+#, fuzzy, javascript-format
+msgid "Use a personal API key for %s"
+msgstr "%s için kişisel API anahtarı kullan."
+
+#: src/preferences/generalPage.js:38
+#, fuzzy, javascript-format
+msgid "Enable this if you have your own API key from %s and enter it below."
+msgstr ""
+"Eğer %s için kişisel API anahtarınız varsa bunu etkinleştir ve aşağıdaki "
+"kutucuğa anahtarını gir."
+
+#: src/preferences/generalPage.js:51
+msgid "Settings"
+msgstr "Ayarlar"
+
+#: src/preferences/generalPage.js:60
+msgid "General"
+msgstr "Genel"
+
+#: src/preferences/generalPage.js:78
+msgid "Current Weather Refresh"
+msgstr "Güncel Hava Durumunu Yenile"
+
+#: src/preferences/generalPage.js:79
+msgid "Current weather refresh interval in minutes"
+msgstr "Güncel hava durumunu dakika cinsinden yenileme sıklığı"
+
+#: src/preferences/generalPage.js:101
+msgid "Weather Forecast Refresh"
+msgstr "Hava Durumu Tahmini Yenileme"
+
+#: src/preferences/generalPage.js:102
+msgid "Forecast refresh interval in minutes if enabled"
+msgstr "Etkinleştirilmişse, dakika cinsinden hava tahmini tazeleme sıklığı"
+
+#: src/preferences/generalPage.js:122
+#, fuzzy
+msgid "My Location Refresh"
+msgstr "Konumumu Yenile"
+
+#: src/preferences/generalPage.js:123
+#, fuzzy
+msgid "My location refresh interval in minutes"
+msgstr "Konumumu dakika cinsinden yenileme sıklığı"
+
+#: src/preferences/generalPage.js:134
+#: schemas/org.gnome.shell.extensions.openmeteo.gschema.xml:122
+msgid "Disable Forecast"
+msgstr "Hava Tahminini Devre Dışı Bırak"
+
+#: src/preferences/generalPage.js:135
+msgid "Disables all fetching and processing of forecast data"
+msgstr ""
+"Hava tahmini verisinin alınmasını ve işlenmesini tamamen devre dışı bırakır"
+
+#: src/preferences/generalPage.js:146
+#: schemas/org.gnome.shell.extensions.openmeteo.gschema.xml:110
+msgid "System Icons"
+msgstr "Sistem Simgeleri"
+
+#: src/preferences/generalPage.js:147
+#, fuzzy, javascript-format
+msgid "Disable to use packaged %s weather icons"
+msgstr ""
+"Paketlenmiş %s hava durumu simgelerinin kullanımını devre dışı bırak"
+
+#: src/preferences/generalPage.js:149
+msgid ""
+"If you have issues with your system icons displaying correctly disable this "
+"to fix it"
+msgstr ""
+"Eğer sistem simgelerinin gösterimiyle ilgili sorunlar yaşıyorsanız, "
+"düzeltmek için bunu devre dışı bırakın"
+
+#: src/preferences/generalPage.js:170
+msgid "First Boot Delay"
+msgstr "İlk Önyükleme Gecikmesi"
+
+#: src/preferences/generalPage.js:171
+msgid "Seconds to delay popup initialization and data fetching"
+msgstr "Açılır pencere yüklenmesi ve veri getirilmesi gecikmesi (saniye)"
+
+#: src/preferences/generalPage.js:173
+msgid ""
+"This setting only applies to the first time the extension is loaded. (first "
+"log in / restarting gnome shell)"
+msgstr ""
+"Bu ayar yalnızca eklentinin ilk yüklenme zamanına uygulanır. (ilk giriş / "
+"gnome shelli yeniden başlatma)"
+
+#: src/preferences/generalPage.js:189
+msgid "Units"
+msgstr "Birimler"
+
+#: src/preferences/generalPage.js:205
+msgid "Temperature"
+msgstr "Sıcaklık"
+
+#: src/preferences/generalPage.js:217
+msgid "Beaufort"
+msgstr "Beaufort"
+
+#: src/preferences/generalPage.js:219
+msgid "Wind Speed"
+msgstr "Rüzgar Hızı"
+
+#: src/preferences/generalPage.js:238
+msgid "Pressure"
+msgstr "Basınç"
+
+#: src/preferences/generalPage.js:245
+msgid "24-hour"
+msgstr "24-saat"
+
+#: src/preferences/generalPage.js:246
+msgid "AM / PM"
+msgstr "ÖÖ / ÖS"
+
+#: src/preferences/generalPage.js:247
+#, fuzzy
+msgid "System"
+msgstr "Sistem"
+
+#: src/preferences/generalPage.js:249
+msgid "Time Format"
+msgstr "Zaman Formatı"
+
+#: src/preferences/generalPage.js:260
+msgid "Simplify Degrees"
+msgstr "Dereceleri Basitleştir"
+
+#: src/preferences/generalPage.js:261
+msgid "Show \"°\" instead of \"°C,\" \"°F,\" etc."
+msgstr "\"°C,\" \"°F,\" vb. yerine \"°\"'yi göster."
+
+#: src/preferences/generalPage.js:262
+msgid "Enable this to cut off the \"C,\" \"F,\" etc. from degrees labels."
+msgstr "\"C,\" \"F,\" gibilerini derece etiketlerinden kaldırmak için bunu etkinleştir."
+
+#: src/preferences/generalPage.js:276 src/preferences/locationsPage.js:67
+msgid "Provider"
+msgstr "Sağlayıcı"
+
+#: src/preferences/generalPage.js:287
+#: schemas/org.gnome.shell.extensions.openmeteo.gschema.xml:67
+msgid "Weather Provider"
+msgstr "Hava Durumu Sağlayıcısı"
+
+#: src/preferences/generalPage.js:288
+#, fuzzy
+msgid "Provider used for weather and forecasts"
+msgstr "Hava durumu ve tahmini için kullanılan sağlayıcı"
+
+#: src/preferences/generalPage.js:301
+msgid "Using provider translations applies to weather conditions only"
+msgstr "Sağlayıcı çevirilerinin kullanımı sadece hava koşullarına uygulanır"
+
+#: src/preferences/generalPage.js:304
+#, fuzzy
+msgid ""
+"Enable this to use provider multilingual support if there's no built-in "
+"translations for your language yet."
+msgstr ""
+"Eğer kendi diliniz için yerleşik çeviriler yoksa, sağlayıcının çoklu dil "
+"desteğini kullanmak için bunu etkinleştirin."
+
+#: src/preferences/generalPage.js:317
+#, fuzzy
+msgid "Use Custom API Key"
+msgstr "Kişisel API Anahtarını Kullan"
+
+#: src/preferences/generalPage.js:333
+msgid "Personal API Key"
+msgstr "Kişisel API Anahtarı"
+
+#: src/preferences/generalPage.js:369 src/preferences/generalPage.js:375
+msgid "Reset"
+msgstr "Sıfırla"
+
+#: src/preferences/generalPage.js:379
+msgid "Restore Defaults"
+msgstr "Varsayılanlara Dön"
+
+#: src/preferences/generalPage.js:381
+msgid "Restore all settings to the defaults."
+msgstr "Bütün ayarları varsayılanlara dönder."
+
+#: src/preferences/layoutPage.js:31
+msgid "Layout"
+msgstr "Düzen"
+
+#: src/preferences/layoutPage.js:39
+msgid "Panel"
+msgstr "Panel"
+
+#: src/preferences/layoutPage.js:44
+msgid "Center"
+msgstr "Orta"
+
+#: src/preferences/layoutPage.js:45
+msgid "Right"
+msgstr "Sağ"
+
+#: src/preferences/layoutPage.js:46
+msgid "Left"
+msgstr "Sol"
+
+#: src/preferences/layoutPage.js:48
+msgid "Position In Panel"
+msgstr "Paneldeki Konum"
+
+#: src/preferences/layoutPage.js:69
+msgid "Position Offset"
+msgstr "Paneldeki Mesafe"
+
+#: src/preferences/layoutPage.js:70
+msgid "The position relative to other items in the box"
+msgstr "Kutudaki diğer öğelere göre konum"
+
+#: src/preferences/layoutPage.js:78
+msgid "Show the temperature in the panel"
+msgstr "Sıcaklığı panelde göster"
+
+#: src/preferences/layoutPage.js:82
+msgid "Temperature In Panel"
+msgstr "Panelde Sıcaklık"
+
+#: src/preferences/layoutPage.js:90
+msgid "Show the weather conditions in the panel"
+msgstr "Hava koşullarını panelde göster"
+
+#: src/preferences/layoutPage.js:94
+msgid "Conditions In Panel"
+msgstr "Panelde Koşullar"
+
+#: src/preferences/layoutPage.js:102
+#, fuzzy
+msgid "Show the time of sunrise/sunset in the panel."
+msgstr "Gün doğumu/Gün batışı saatini panelde göster."
+
+#: src/preferences/layoutPage.js:106
+#, fuzzy
+msgid "Sunrise/Sunset In Panel"
+msgstr "Panelde Gün doğumu/Gün batışı "
+
+#: src/preferences/layoutPage.js:114
+msgid ""
+"Show the sunset/sunrise before the temperature/conditions. Requires restart."
+msgstr "Gün doğumu/Gün batışını hava sıcaklığı/durumundan sonra göster. "
+"Yeniden başlatma gerekir."
+
+#: src/preferences/layoutPage.js:118
+msgid "Sunrise/Sunset First (Restart Required)"
+msgstr "Önce Gün doğumu/Gün batışı (Yeniden Başlatma Gerekir)"
+
+#: src/preferences/layoutPage.js:134
+msgid "Popup"
+msgstr "Açılır Pencere"
+
+#: src/preferences/layoutPage.js:152
+msgid "Popup Position"
+msgstr "Açılır Pencere Konumu"
+
+#: src/preferences/layoutPage.js:153
+msgid "Alignment of the popup from left to right"
+msgstr "Açılır pencerenin soldan sağa hizası"
+
+#: src/preferences/layoutPage.js:164
+msgid "Wind Direction Arrows"
+msgstr "Rüzgar Yönü Okları"
+
+#: src/preferences/layoutPage.js:176
+#: schemas/org.gnome.shell.extensions.openmeteo.gschema.xml:102
+msgid "Translate Conditions"
+msgstr "Koşulları Çevir"
+
+#: src/preferences/layoutPage.js:184 src/preferences/layoutPage.js:198
+#: src/preferences/layoutPage.js:212
+msgid "0"
+msgstr "0"
+
+#: src/preferences/layoutPage.js:185 src/preferences/layoutPage.js:199
+#: src/preferences/layoutPage.js:213 src/preferences/layoutPage.js:302
+msgid "1"
+msgstr "1"
+
+#: src/preferences/layoutPage.js:186 src/preferences/layoutPage.js:200
+#: src/preferences/layoutPage.js:214 src/preferences/layoutPage.js:303
+msgid "2"
+msgstr "2"
+
+#: src/preferences/layoutPage.js:187 src/preferences/layoutPage.js:201
+#: src/preferences/layoutPage.js:215 src/preferences/layoutPage.js:304
+msgid "3"
+msgstr "3"
+
+#: src/preferences/layoutPage.js:189
+msgid "Temperature Decimal Places"
+msgstr "Sıcaklığın Ondalık Basamakları"
+
+#: src/preferences/layoutPage.js:190 src/preferences/layoutPage.js:205
+#: src/preferences/layoutPage.js:219
+msgid "Maximum number of digits after the decimal point"
+msgstr "Ondalık noktadan sonraki azami basamak sayısı"
+
+#: src/preferences/layoutPage.js:196
+msgid "Unit Default"
+msgstr "Varsayılan Birim"
+
+#: src/preferences/layoutPage.js:197 src/preferences/layoutPage.js:211
+msgid "Follow Temp."
+msgstr "Sıcaklık ile aynı"
+
+#: src/preferences/layoutPage.js:202 src/preferences/layoutPage.js:216
+#: src/preferences/layoutPage.js:305
+msgid "4"
+msgstr "4"
+
+#: src/preferences/layoutPage.js:204
+#, fuzzy
+msgid "Pressure Decimal Places"
+msgstr "Basıncın Ondalık Basamakları"
+
+#: src/preferences/layoutPage.js:218
+#, fuzzy
+msgid "Speed Decimal Places"
+msgstr "Hızın Ondalık Basamakları"
+
+#: src/preferences/layoutPage.js:239
+msgid "Location Text Length"
+msgstr "Konum Metin Uzunluğu"
+
+#: src/preferences/layoutPage.js:241
+msgid "Maximum length of the location text. A setting of '0' is unlimited"
+msgstr "Konum metninin azami uzunluğu. '0' ayarı, sınırsız anlamına gelir"
+
+#: src/preferences/layoutPage.js:249
+msgid "Off"
+msgstr "Kapalı"
+
+#: src/preferences/layoutPage.js:250
+msgid "White Text"
+msgstr "Beyaz Yazı"
+
+#: src/preferences/layoutPage.js:251
+msgid "Black Text"
+msgstr "Siyah Yazı"
+
+#: src/preferences/layoutPage.js:253
+msgid "High Contrast"
+msgstr "Yüksek Kontrast"
+
+#: src/preferences/layoutPage.js:254
+msgid "Enable to override GNOME shell colors"
+msgstr "GNOME kabuğu renklerini geçersiz kılmak için etkinleştir."
+
+#: src/preferences/layoutPage.js:273
+msgid "Forecast"
+msgstr "Hava Tahmini"
+
+#: src/preferences/layoutPage.js:283
+msgid "Center Today's Forecast"
+msgstr "Bugünün Tahminini Ortala"
+
+#: src/preferences/layoutPage.js:294
+msgid "Conditions In Forecast"
+msgstr "Hava Tahmindeki Koşullar"
+
+#: src/preferences/layoutPage.js:301
+msgid "Today Only"
+msgstr "Yalnızca Bugün"
+
+#: src/preferences/layoutPage.js:306
+msgid "5"
+msgstr "5"
+
+#: src/preferences/layoutPage.js:308
+msgid "Total Days In Forecast"
+msgstr "Hava Tahminindeki Toplam Gün"
+
+#: src/preferences/layoutPage.js:319
+msgid "Keep Forecast Expanded"
+msgstr "Hava Tahmini Genişletilmiş Tut"
+
+#: src/preferences/searchResultsWindow.js:36
+#, fuzzy, javascript-format
+msgid "Search Results from %s"
+msgstr "%s 'dan Arama Sonuçları"
+
+#: src/preferences/searchResultsWindow.js:53
+msgid "New Search"
+msgstr "Yeni Arama"
+
+#: src/preferences/searchResultsWindow.js:60
+msgid "Searching ..."
+msgstr "Aranıyor..."
+
+#: src/preferences/searchResultsWindow.js:62
+#, javascript-format
+msgid "Please wait while searching for locations matching \"%s\""
+msgstr "\"%s\" ile eşleşen konumlar aranırken lütfen bekleyin"
+
+#: src/preferences/searchResultsWindow.js:117
+msgid "AppKey Required"
+msgstr "Uygulama Anahtarı Gerekli"
+
+#: src/preferences/searchResultsWindow.js:119
+#, javascript-format
+msgid "You need an AppKey to use MapQuest, get one at: %s"
+msgstr ""
+"MapQuest'i kullanmak için bir Uygulama Anahtarına ihtiyacınız var. %s "
+"adresinden edinebilirsiniz"
+
+#: src/preferences/searchResultsWindow.js:207
+#, javascript-format
+msgid "Results for \"%s\""
+msgstr "\"%s\" için sonuçlar"
+
+#: src/preferences/searchResultsWindow.js:273
+#: src/preferences/locationsPage.js:393
+#, javascript-format
+msgid "%s has been added"
+msgstr "%s eklendi"
+
+#: src/preferences/searchResultsWindow.js:284
+msgid "API Error"
+msgstr "API Hatası"
+
+#: src/preferences/searchResultsWindow.js:286
+#, javascript-format
+msgid "Invalid data when searching for \"%s\"."
+msgstr "\"%s\" aranırken geçersiz veri."
+
+#: src/preferences/searchResultsWindow.js:292
+msgid "No Matches Found"
+msgstr "Hiçbir Eşleşme Bulunamadı"
+
+#: src/preferences/searchResultsWindow.js:294
+#, javascript-format
+msgid "No results found when searching for \"%s\"."
+msgstr "\"%s\" aranırken hiçbir sonuç bulunamadı."
+
+#: src/preferences/aboutPage.js:36
+msgid "About"
+msgstr "Hakkında"
+
+#: src/preferences/aboutPage.js:64
+#, fuzzy
+msgid ""
+"Display weather information for any location on Earth in the GNOME Shell."
+msgstr ""
+"Yeryüzündeki herhangi bir konumun hava bilgilerini GNOME Kabuğu'nda göster."
+
+#: src/preferences/aboutPage.js:79 src/preferences/aboutPage.js:80
+#, fuzzy
+msgid "Unknown"
+msgstr "Bilinmeyen"
+
+#: src/preferences/aboutPage.js:84
+#, fuzzy
+msgid "Open-Meteo Version"
+msgstr "Open-Meteo Sürümü"
+
+#: src/preferences/aboutPage.js:96
+msgid "Git Version"
+msgstr "Git Sürümü"
+
+#: src/preferences/aboutPage.js:107
+msgid "GNOME Version"
+msgstr "GNOME Sürümü"
+
+#: src/preferences/aboutPage.js:117
+#, fuzzy
+msgid "Copy Settings JSON"
+msgstr "Ayarları JSON Formatında Kopyala"
+
+#: src/preferences/aboutPage.js:120
+msgid "Copy"
+msgstr "Kopyala"
+
+#: src/preferences/aboutPage.js:167
+msgid "Copied settings JSON to clipboard."
+msgstr "Ayarlar JSON formatında panoya kopyalandı."
+
+#: src/preferences/aboutPage.js:188
+#, javascript-format
+msgid "Maintained by: %s"
+msgstr "Geliştiren: %s"
+
+#: src/preferences/aboutPage.js:194
+#, javascript-format
+msgid "Contribute or translate the project on %s."
+msgstr "%s'da projeye veya çevirilere katkıda bulun."
+
+#: src/preferences/aboutPage.js:200
+#, javascript-format
+msgid "This is a fork of %s's extension."
+msgstr "Bu, %s eklentisinin forkudur."
+
+#: src/preferences/aboutPage.js:222
+#, javascript-format
+msgid "Weather data provided by: %s"
+msgstr "Hava durumu veri sağlayıcısı: %s"
+
+#: src/preferences/aboutPage.js:236
+msgid "This program comes with ABSOLUTELY NO WARRANTY."
+msgstr "Bu program KESİNLİKLE HİÇBİR GARANTİ sunmamaktadır."
+
+# Burada kelimeler bilinçli olarak yer değiştirilmiştir!
+#: src/preferences/aboutPage.js:238
+msgid "See the"
+msgstr "Ayrıntılı bilgi için"
+
+#: src/preferences/aboutPage.js:240
+msgid "GNU General Public License, version 2 or later"
+msgstr "GNU Genel Kamu Lisansı, 2. sürüm veya sonrası"
+
+# Burada kelimeler bilinçli olarak yer değiştirilmiştir!
+#: src/preferences/aboutPage.js:242
+msgid "for details."
+msgstr "sayfasına bakınız."
+
+#: src/preferences/locationsPage.js:55
+msgid "Add"
+msgstr "Ekle"
+
+#: src/preferences/locationsPage.js:75
+#, fuzzy
+msgid "My Loc. Provider"
+msgstr "Konum Sağlayıcım"
+
+#: src/preferences/locationsPage.js:76
+#, fuzzy
+msgid "Provider for getting My Location"
+msgstr "Konum arama için kullanılan sağlayıcı"
+
+#: src/preferences/locationsPage.js:85
+#: schemas/org.gnome.shell.extensions.openmeteo.gschema.xml:71
+msgid "Geolocation Provider"
+msgstr "Coğrafi Konum Sağlayıcısı"
+
+#: src/preferences/locationsPage.js:86
+msgid "Provider used for location search"
+msgstr "Konum arama için kullanılan sağlayıcı"
+
+#: src/preferences/locationsPage.js:99
+msgid "Personal MapQuest Key"
+msgstr "Kişisel MapQuest Anahtarı"
+
+#: src/preferences/locationsPage.js:100
+msgid "Personal API Key from developer.mapquest.com"
+msgstr "developer.mapquest.com tarafından sağlanan kişisel API anahtarı"
+
+#: src/preferences/locationsPage.js:262
+#, javascript-format
+msgid "Location changed to: %s"
+msgstr "Konum %s olarak değişti"
+
+#: src/preferences/locationsPage.js:292
+msgid "Add New Location"
+msgstr "Yeni Konum Ekle"
+
+#: src/preferences/locationsPage.js:313
+msgid "Search by Location or Coordinates"
+msgstr "Koordinat ya da konuma göre ara"
+
+#: src/preferences/locationsPage.js:319
+msgid "e.g. London, England or 51.5074456,-0.1277653"
+msgstr "örn. Ankara, Türkiye veya 39.9207759,32.8540497"
+
+#: src/preferences/locationsPage.js:321 src/preferences/locationsPage.js:449
+#: src/preferences/locationsPage.js:466
+msgid "Clear entry"
+msgstr "Girdiyi temizle"
+
+#: src/preferences/locationsPage.js:338
+msgid "Search"
+msgstr "Ara"
+
+#: src/preferences/locationsPage.js:364
+msgid "We need something to search for!"
+msgstr "Aranacak bir şey lazım!"
+
+#: src/preferences/locationsPage.js:409
+#, javascript-format
+msgid "Edit %s"
+msgstr "%s düzenle"
+
+#: src/preferences/locationsPage.js:431
+msgid "Edit Name"
+msgstr "Adı Düzenle"
+
+#: src/preferences/locationsPage.js:457
+msgid "Edit Coordinates"
+msgstr "Koordinatları Düzenle"
+
+#: src/preferences/locationsPage.js:473
+msgid ""
+"If you meant to search up a new location by name, <b>add</b> a location "
+"instead."
+msgstr "Eğer yeni bir konumu isim ile aramak istediysen bunun yerine konum "
+"<b>ekle</b>."
+
+#: src/preferences/locationsPage.js:482
+msgid "Save"
+msgstr "Kaydet"
+
+#: src/preferences/locationsPage.js:517
+msgid "Coordinates field cannot be empty."
+msgstr "Koordinat kutucuğu boş bırakılamaz."
+
+#: src/preferences/locationsPage.js:525
+#, javascript-format
+msgid "Coordinates field must be in the format of '%s' or the text '%s'."
+msgstr "Koordinat girdisi '%s' formatında veya '%s' şeklinde olmalı."
+
+#: src/preferences/locationsPage.js:533
+#, javascript-format
+msgid "Name field can only be empty if coordinates are '%s'."
+msgstr "İsim kutucuğu sadece koordinatlar '%s' ise boş bırakılabilir."
+
+#: src/preferences/locationsPage.js:562
+#, javascript-format
+msgid "%s has been updated"
+msgstr "%s güncellendi"
+
+#: src/preferences/locationsPage.js:593
+#, javascript-format
+msgid "Are you sure you want to delete \"%s\"?"
+msgstr "\"%s\"yi silmek istediğinize emin misiniz?"
+
+#: src/preferences/locationsPage.js:601
+msgid "Delete"
+msgstr "Sil"
+
+#: src/preferences/locationsPage.js:605
+msgid "Cancel"
+msgstr "İptal Et"
+
+#: src/preferences/locationsPage.js:634
+#, javascript-format
+msgid "%s has been deleted"
+msgstr "%s silindi"
+
+#: schemas/org.gnome.shell.extensions.openmeteo.gschema.xml:75
+msgid "Temperature Unit"
+msgstr "Sıcaklık Birimi"
+
+#: schemas/org.gnome.shell.extensions.openmeteo.gschema.xml:79
+msgid "Pressure Unit"
+msgstr "Basınç Birimi"
+
+#: schemas/org.gnome.shell.extensions.openmeteo.gschema.xml:83
+msgid "Wind Speed Units"
+msgstr "Rüzgar Hızı Birimleri"
+
+#: schemas/org.gnome.shell.extensions.openmeteo.gschema.xml:84
+msgid ""
+"Choose the units used for wind speed. Allowed values are 'kph', 'mph', 'm/"
+"s', 'knots', 'ft/s' or 'Beaufort'."
+msgstr ""
+"Hava hızı için kullanılacak birimleri seçin. İzin verilen değerler 'kph', "
+"'mph', 'm/s', 'knots', 'ft/s' ve 'Beaufort'."
+
+#: schemas/org.gnome.shell.extensions.openmeteo.gschema.xml:88
+msgid "Wind Direction by Arrows"
+msgstr "Oklarla Rüzgar Yönü"
+
+#: schemas/org.gnome.shell.extensions.openmeteo.gschema.xml:89
+#, fuzzy
+msgid "True to display wind direction through arrows rather than letters."
+msgstr "Rüzgar yönünü harfler yerine oklarla göstermeyi seçin."
+
+#: schemas/org.gnome.shell.extensions.openmeteo.gschema.xml:94
+#, fuzzy
+msgid "DEPRECATED, City to be displayed"
+msgstr "Gösterilen şehir"
+
+#: schemas/org.gnome.shell.extensions.openmeteo.gschema.xml:98
+msgid "Index of the city to display by default."
+msgstr "Varsayılan olarak gösterilecek şehrin numarası."
+
+#: schemas/org.gnome.shell.extensions.openmeteo.gschema.xml:106
+msgid "OpenMeteoMap Multilingual Support (weather descriptions only)"
+msgstr "OpenMeteoMap Çoklu Dil Desteği (yalnızca hava tasvirleri)"
+
+#: schemas/org.gnome.shell.extensions.openmeteo.gschema.xml:114
+#, fuzzy
+msgid "True to show temperature in the panel"
+msgstr "Sıcaklığı panelde göster"
+
+#: schemas/org.gnome.shell.extensions.openmeteo.gschema.xml:118
+#, fuzzy
+msgid "True to show conditions in the panel."
+msgstr "Hava koşullarını panelde göster"
+
+#: schemas/org.gnome.shell.extensions.openmeteo.gschema.xml:126
+msgid "Conditions in Forecast"
+msgstr "Hava Tahmini Koşulları"
+
+#: schemas/org.gnome.shell.extensions.openmeteo.gschema.xml:130
+#: schemas/org.gnome.shell.extensions.openmeteo.gschema.xml:134
+msgid "Position in Panel"
+msgstr "Paneldeki Konum"
+
+#: schemas/org.gnome.shell.extensions.openmeteo.gschema.xml:138
+msgid "Horizontal position of menu-box."
+msgstr "Menü kutusunun yatay konumu."
+
+#: schemas/org.gnome.shell.extensions.openmeteo.gschema.xml:142
+msgid "Refresh interval (actual weather)"
+msgstr "Yenileme sıklığı (gerçek hava durumu)"
+
+#: schemas/org.gnome.shell.extensions.openmeteo.gschema.xml:146
+#, fuzzy
+msgid "Maximum length of the location text"
+msgstr "Konum metninin azami uzunluğu"
+
+#: schemas/org.gnome.shell.extensions.openmeteo.gschema.xml:150
+msgid "Refresh interval (forecast)"
+msgstr "Yenileme sıklığı (hava tahmin)"
+
+#: schemas/org.gnome.shell.extensions.openmeteo.gschema.xml:154
+msgid "Center forecastbox."
+msgstr "Merkez hava tahmini kutusu."
+
+#: schemas/org.gnome.shell.extensions.openmeteo.gschema.xml:158
+msgid "Always keep forecast expanded"
+msgstr "Hava tahminini daima genişletilmiş tut"
+
+#: schemas/org.gnome.shell.extensions.openmeteo.gschema.xml:162
+msgid "Number of days in forecast"
+msgstr "Hava tahminindeki gün sayısı"
+
+#: schemas/org.gnome.shell.extensions.openmeteo.gschema.xml:166
+#, fuzzy
+msgid "Maximum number of digits after the decimal point for temperature"
+msgstr "Sıcaklık için ondalık noktadan sonraki azami basamak sayısı"
+
+#: schemas/org.gnome.shell.extensions.openmeteo.gschema.xml:170
+#, fuzzy
+msgid "Maximum number of digits after the decimal point for pressure"
+msgstr "Basınç için ondalık noktadan sonraki azami basamak sayısı"
+
+#: schemas/org.gnome.shell.extensions.openmeteo.gschema.xml:174
+#, fuzzy
+msgid "Maximum number of digits after the decimal point for wind speed"
+msgstr "Rüzgar hızı için ondalık noktadan sonraki azami basamak sayısı"
+
+#: schemas/org.gnome.shell.extensions.openmeteo.gschema.xml:178
+msgid "Your personal API key from openmeteomap.org"
+msgstr "openmeteomap.org adresinden kişisel API anahtarınız"
+
+#: schemas/org.gnome.shell.extensions.openmeteo.gschema.xml:182
+#, fuzzy
+msgid "Your personal API key from WeatherAPI.com"
+msgstr "WeatherAPI.com adresinden kişisel API anahtarınız"
+
+#: schemas/org.gnome.shell.extensions.openmeteo.gschema.xml:186
+msgid "Use the extensions default API key from openmeteomap.org"
+msgstr ""
+"openmeteomap.org adresinden uzantıların varsayılan API anahtarını kullan"
+
+#: schemas/org.gnome.shell.extensions.openmeteo.gschema.xml:190
+#, fuzzy
+msgid "Use the extensions default API key from WeatherAPI.com"
+msgstr ""
+"WeatherAPI.com adresinden uzantıların varsayılan API anahtarını kullan"
+
+#: schemas/org.gnome.shell.extensions.openmeteo.gschema.xml:194
+msgid "Your personal AppKey from developer.mapquest.com"
+msgstr "developer.mapquest.com adresinden kişisel uygulama anahtarınız"
+
+#: schemas/org.gnome.shell.extensions.openmeteo.gschema.xml:198
+msgid ""
+"Time format for hours. Possible values are '24hr' for 24-hour clock, '12hr' "
+"for AM/PM, and 'system' to follow the GNOME setting."
+msgstr "Saatler için zaman formatı. Muhtemel değerler; 24 saatlik format için "
+"'24hr', ÖÖ/ÖS formatı için '12hr', ve GNOME ayarlarını takipe etmek için "
+"'system'dir."
+
+#: schemas/org.gnome.shell.extensions.openmeteo.gschema.xml:202
+msgid "Seconds to delay popup initialization and data fetch on the first load"
+msgstr "İlk yüklemede açılır pencere yükleme ve veri alma gecikmesi (saniye)"
+
+#: schemas/org.gnome.shell.extensions.openmeteo.gschema.xml:206
+msgid "Default width for the preferences window"
+msgstr "Tercihler penceresinin varsayılan genişliği"
+
+#: schemas/org.gnome.shell.extensions.openmeteo.gschema.xml:210
+msgid "Default height for the preferences window"
+msgstr "Tercihler penceresinin varsayılan yüksekliği"
+
+#: schemas/org.gnome.shell.extensions.openmeteo.gschema.xml:214
+msgid ""
+"High contrast style to use, possible values are 'none', 'white', or 'black'."
+msgstr "Kullanılacak yüksek kontrast stili. Muhtemel değerler 'none', 'white' "
+"veya 'black'dir."
+
+#: schemas/org.gnome.shell.extensions.openmeteo.gschema.xml:218
+#, fuzzy
+msgid "True to show the sunset/sunrise in the panel."
+msgstr "Gün doğumu/Gün batımını panelde göster"
+
+#: schemas/org.gnome.shell.extensions.openmeteo.gschema.xml:222
+msgid ""
+"True to show the sunset/sunrise in the panel before the temperature/"
+"conditions if enabled."
+msgstr ""
+"Hava durumu şartları etkinleştirildiyse panelde güneş batışı/doğuşunu "
+"sıcaklıktan önce göstermek için True."
+
+#: schemas/org.gnome.shell.extensions.openmeteo.gschema.xml:226
+msgid "False if this extension has never been initialized before."
+msgstr "Bu uzantı daha önce başlatılmadıysa False."
+
+#: schemas/org.gnome.shell.extensions.openmeteo.gschema.xml:230
+msgid "How often, in minutes, to re-fetch My Location if selected."
+msgstr "Seçildiyse, konumu yeniden güncellemenin dakika cinsinden sıklığı."
+
+#: schemas/org.gnome.shell.extensions.openmeteo.gschema.xml:234
+msgid "True to cut off the \"F\" or \"C\" after the degree symbol."
+msgstr "Derece sembolünden sonra \"F\" veya \"C\"'yi kaldırmak için True."
+
+#: schemas/org.gnome.shell.extensions.openmeteo.gschema.xml:238
+msgid "Freezes the settings changed listener; user should not change this."
+msgstr "Ayarlar değiştiğinde dinleyiciyi dondurur; kullanıcı bunu değiştirmemeli."
+
+#: schemas/org.gnome.shell.extensions.openmeteo.gschema.xml:243
+#, fuzzy
+msgid "List of locations."
+msgstr "Konumların listesi."
+
+#: schemas/org.gnome.shell.extensions.openmeteo.gschema.xml:247
+#, fuzzy
+msgid "Provider to use for \"My Location.\""
+msgstr "\"Konumum\" için kullanılan sağlayıcı"
+
+#: schemas/org.gnome.shell.extensions.openmeteo.gschema.xml:251
+msgid "Empty or the last initialization error message."
+msgstr "Boş veya son başlatma hatası iletileri."
+
+#~ msgid "Thunderstorm with Light Rain"
+#~ msgstr "Hafif Yağmurlu Gök Gürültülü Fırtına"
+
+#~ msgid "Thunderstorm with Rain"
+#~ msgstr "Yağmurlu Gök Gürültülü Fırtına"
+
+#~ msgid "Thunderstorm with Heavy Rain"
+#~ msgstr "Sağanak Yağışlı Gök Gürültülü Fırtına"
+
+#~ msgid "Light Thunderstorm"
+#~ msgstr "Hafif Gök Gürültülü Fırtına"
+
+#~ msgid "Thunderstorm"
+#~ msgstr "Gök Gürültülü Fırtına"
+
+#~ msgid "Heavy Thunderstorm"
+#~ msgstr "Yoğun Gök Gürültülü Fırtına"
+
+#~ msgid "Ragged Thunderstorm"
+#~ msgstr "Düzensiz Gök Gürültülü Fırtına"
+
+#~ msgid "Thunderstorm with Light Drizzle"
+#~ msgstr "Hafif Çiselemeli Gök Gürültülü Fırtına"
+
+#~ msgid "Thunderstorm with Drizzle"
+#~ msgstr "Çiselemeli Gök Gürültülü Fırtına"
+
+#~ msgid "Thunderstorm with Heavy Drizzle"
+#~ msgstr "Yoğun Çiselemeli Gök Gürültülü Fırtına"
+
+#~ msgid "Light Drizzle"
+#~ msgstr "Hafif Çiseleme"
+
+#~ msgid "Drizzle"
+#~ msgstr "Çiseleme"
+
+#~ msgid "Heavy Drizzle"
+#~ msgstr "Yoğun Çiseleme"
+
+#~ msgid "Light Drizzle Rain"
+#~ msgstr "Hafif Çiseleyen Yağmur"
+
+#~ msgid "Drizzle Rain"
+#~ msgstr "Çiseleyen Yağmur"
+
+#~ msgid "Heavy Drizzle Rain"
+#~ msgstr "Yoğun Çiseleyen Yağmur"
+
+#~ msgid "Shower Rain and Drizzle"
+#~ msgstr "Hafif Yağmur ve Çiseleme"
+
+#~ msgid "Heavy Rain and Drizzle"
+#~ msgstr "Yoğun Yağmur ve Çiseleme"
+
+#~ msgid "Shower Drizzle"
+#~ msgstr "Sağanak Çiseleme"
+
+#~ msgid "Light Rain"
+#~ msgstr "Hafif Yağmur"
+
+#~ msgid "Moderate Rain"
+#~ msgstr "Ilıman Yağmur"
+
+#~ msgid "Heavy Rain"
+#~ msgstr "Yoğun Yağmur"
+
+#~ msgid "Very Heavy Rain"
+#~ msgstr "Çok Şiddetli Yağmur"
+
+#~ msgid "Extreme Rain"
+#~ msgstr "Aşırı Sağanak Yağmur"
+
+#~ msgid "Freezing Rain"
+#~ msgstr "Dondurucu Yağmur"
+
+#~ msgid "Light Shower Rain"
+#~ msgstr "Hafif Sağanak Yağmur"
+
+#~ msgid "Shower Rain"
+#~ msgstr "Sağanak Yağmur"
+
+#~ msgid "Heavy Shower Rain"
+#~ msgstr "Ağır Sağanak Yağmur"
+
+#~ msgid "Ragged Shower Rain"
+#~ msgstr "Düzensiz Sağanak Yağmur"
+
+#~ msgid "Light Snow"
+#~ msgstr "Hafif Kar"
+
+#~ msgid "Snow"
+#~ msgstr "Kar"
+
+#~ msgid "Heavy Snow"
+#~ msgstr "Yoğun Kar"
+
+#~ msgid "Sleet"
+#~ msgstr "Sulu Kar"
+
+#~ msgid "Light Shower Sleet"
+#~ msgstr "Hafif Sağanak Sulu Kar"
+
+#~ msgid "Shower Sleet"
+#~ msgstr "Sağanak Sulu Kar"
+
+#~ msgid "Light Rain and Snow"
+#~ msgstr "Hafif Yağmurla Karışık Kar"
+
+#~ msgid "Rain and Snow"
+#~ msgstr "Yağmurla Karışık Kar"
+
+#~ msgid "Light Shower Snow"
+#~ msgstr "Hafif Sağanak Şeklinde Kar"
+
+#~ msgid "Shower Snow"
+#~ msgstr "Sağanak Şeklinde Kar"
+
+#~ msgid "Heavy Shower Snow"
+#~ msgstr "Yoğun Sağanak Şeklinde Kar"
+
+#~ msgid "Mist"
+#~ msgstr "Sis"
+
+#~ msgid "Smoke"
+#~ msgstr "Duman"
+
+#~ msgid "Haze"
+#~ msgstr "Pus"
+
+#~ msgid "Sand/Dust Whirls"
+#~ msgstr "Kum/Toz Hortumu"
+
+#~ msgid "Fog"
+#~ msgstr "Sis"
+
+#~ msgid "Sand"
+#~ msgstr "Kum"
+
+#~ msgid "Dust"
+#~ msgstr "Toz"
+
+#~ msgid "Volcanic Ash"
+#~ msgstr "Volkanik Kül"
+
+#~ msgid "Squalls"
+#~ msgstr "Yerel Fırtına"
+
+#~ msgid "Tornado"
+#~ msgstr "Kasırga"
+
+#~ msgid "Clear Sky"
+#~ msgstr "Açık Gök"
+
+#~ msgid "Few Clouds"
+#~ msgstr "Az Bulutlu"
+
+#~ msgid "Scattered Clouds"
+#~ msgstr "Dağınık Bulutlu"
+
+#~ msgid "Broken Clouds"
+#~ msgstr "Parçalı Bulutlu"
+
+#~ msgid "Overcast Clouds"
+#~ msgstr "Bulutlu"
+
+#~ msgid "?"
+#~ msgstr "?"
+
+#, fuzzy, javascript-format
+#~ msgid "Weather: %s"
+#~ msgstr "Hava durumu veri sağlayıcısı: %s"
+
+#~ msgid "Use the built-in API key for OpenMeteoMap"
+#~ msgstr "OpenMeteoMap için yerleşik API anahtarını kullanın"
+
+#~ msgid "hPa"
+#~ msgstr "hPa"
+
+#~ msgid "Invalid city"
+#~ msgstr "Geçersiz şehir"
+
+#~ msgid "Invalid location! Please try to recreate it."
+#~ msgstr "Geçersiz konum! Lütfen yeniden oluşturmayı deneyin."
+
+#~ msgid "e.g. Vaiaku, Tuvalu or -8.5211767,179.1976747"
+#~ msgstr "ör. Vaiaku, Tuvalu ya da -8.5211767,179.1976747"
+
+#~ msgid "Please complete all fields"
+#~ msgstr "Lütfen tüm alanları doldurun"
+
+#~ msgid "Session Type"
+#~ msgstr "Oturum Türü"
+
+#~ msgid "Actual City"
+#~ msgstr "Güncel Şehir"
+
+#~ msgid "Temperature in Panel"
+#~ msgstr "Paneldeki Sıcaklık"
+
+#~ msgid "Conditions in Panel"
+#~ msgstr "Paneldeki Koşullar"
+
+#~ msgid "Maximal number of digits after the decimal point"
+#~ msgstr "Ondalık noktadan sonraki azami basamak sayısı"
