@@ -5,6 +5,7 @@
     Weather data provided by Open-Meteo (https://open-meteo.com/)
 
     Copyright 2022 Jason Oickle
+    Copyright 2026 Weikang Wang
 */
 
 import Gtk from "gi://Gtk";
@@ -147,17 +148,6 @@ class LayoutPage extends Adw.PreferencesPage {
     });
     weatherPopupPositionRow.add_suffix(weatherPopupPositionScale);
 
-    // Wind arrows
-    let windArrowsSwitch = new Gtk.Switch({
-      valign: Gtk.Align.CENTER,
-      active: this._settings.get_boolean("wind-direction"),
-    });
-    let windArrowsRow = new Adw.ActionRow({
-      title: _("Wind Direction Arrows"),
-      activatable_widget: windArrowsSwitch,
-    });
-    windArrowsRow.add_suffix(windArrowsSwitch);
-
     // Translate conditions
     this.providerTranslations = this._settings.get_boolean("owm-api-translate");
     let translateConditionsSwitch = new Gtk.Switch({
@@ -251,7 +241,6 @@ class LayoutPage extends Adw.PreferencesPage {
     });
 
     popupGroup.add(weatherPopupPositionRow);
-    popupGroup.add(windArrowsRow);
     popupGroup.add(translateConditionsRow);
     popupGroup.add(temperatureDigitsRow);
     popupGroup.add(pressureDigitsRow);
@@ -357,10 +346,7 @@ class LayoutPage extends Adw.PreferencesPage {
     });
     weatherPopupPositionScale.connect("value-changed", (widget) => {
       this._settings.set_double("menu-alignment", widget.get_value());
-    });
-    windArrowsSwitch.connect("notify::active", (widget) => {
-      this._settings.set_boolean("wind-direction", widget.get_active());
-    });
+    }); 
     translateConditionsSwitch.connect("notify::active", (widget) => {
       this._settings.set_boolean("translate-condition", widget.get_active());
     });

@@ -955,14 +955,10 @@ class OpenMeteoMenuButton extends PanelMenu.Button {
             return 0;
           case WeatherPressureUnits.KPA:
           case WeatherPressureUnits.MMHG:
-          case WeatherPressureUnits.HPA:
-          case WeatherPressureUnits.TORR:
             return 1;
           case WeatherPressureUnits.INHG:
-          case WeatherPressureUnits.PSI:
             return 2;
           case WeatherPressureUnits.ATM:
-          case WeatherPressureUnits.AT:
           case WeatherPressureUnits.BAR:
             return 3;
         }
@@ -1214,16 +1210,6 @@ class OpenMeteoMenuButton extends PanelMenu.Button {
         return _("\u00B0F");
       case WeatherUnits.KELVIN:
         return _("K");
-      case WeatherUnits.RANKINE:
-        return _("\u00B0Ra");
-      case WeatherUnits.REAUMUR:
-        return _("\u00B0R\u00E9");
-      case WeatherUnits.ROEMER:
-        return _("\u00B0R\u00F8");
-      case WeatherUnits.DELISLE:
-        return _("\u00B0De");
-      case WeatherUnits.NEWTON:
-        return _("\u00B0N");
       default:
         console.warn("Open-Meteo: Invalid tempeature unit.");
         return "\u00B0";
@@ -1380,27 +1366,13 @@ class OpenMeteoMenuButton extends PanelMenu.Button {
         pressure_unit = _("atm");
         break;
 
-      case WeatherPressureUnits.AT:
-        pressure *= 0.00101971621298;
-        pressure_unit = _("at");
-        break;
-
-      case WeatherPressureUnits.TORR:
-        pressure *= 0.750061683;
-        pressure_unit = _("Torr");
-        break;
-
-      case WeatherPressureUnits.PSI:
-        pressure *= 0.0145037738;
-        pressure_unit = _("psi");
-        break;
-
       case WeatherPressureUnits.MMHG:
         pressure *= 0.750061683;
         pressure_unit = _("mmHg");
         break;
 
       case WeatherPressureUnits.MBAR:
+        pressure *= 1.0;
         pressure_unit = _("mbar");
         break;
 
@@ -1432,26 +1404,6 @@ class OpenMeteoMenuButton extends PanelMenu.Button {
         tLocal = tempC + 273.15;
         isDegrees = false;
         break;
-
-      case WeatherUnits.RANKINE:
-        tLocal = tempC * 1.8 + 491.67;
-        break;
-
-      case WeatherUnits.REAUMUR:
-        tLocal = tempC / 1.25;
-        break;
-
-      case WeatherUnits.ROEMER:
-        tLocal = tempC / 1.9047619 + 7.5;
-        break;
-
-      case WeatherUnits.DELISLE:
-        tLocal = tempC * 1.5 - 100;
-        break;
-
-      case WeatherUnits.NEWTON:
-        tLocal = tempC / 3.03030303;
-        break;
     }
 
     let string = tLocal.toLocaleString(this.locale, { maximumFractionDigits: this._decimal_places });
@@ -1468,7 +1420,6 @@ class OpenMeteoMenuButton extends PanelMenu.Button {
     let conv_MPSinMPH = 2.23693629;
     let conv_MPSinKPH = 3.6;
     let conv_MPSinKNOTS = 1.94384449;
-    let conv_MPSinFPS = 3.2808399;
     let unit = _("m/s");
 
     switch (this._wind_speed_units) {
@@ -1489,11 +1440,6 @@ class OpenMeteoMenuButton extends PanelMenu.Button {
       case WeatherWindSpeedUnits.KNOTS:
         speed = (speed * conv_MPSinKNOTS).toFixed(this._speed_decimal_places);
         unit = _("kn");
-        break;
-
-      case WeatherWindSpeedUnits.FPS:
-        speed = (speed * conv_MPSinFPS).toFixed(this._speed_decimal_places);
-        unit = _("ft/s");
         break;
 
       case WeatherWindSpeedUnits.BEAUFORT:

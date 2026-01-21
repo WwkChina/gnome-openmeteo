@@ -16,32 +16,22 @@
     <value value="0" nick="celsius"/>
     <value value="1" nick="fahrenheit"/>
     <value value="2" nick="kelvin"/>
-    <value value="3" nick="rankine"/>
-    <value value="4" nick="reaumur"/>
-    <value value="5" nick="roemer"/>
-    <value value="6" nick="delisle"/>
-    <value value="7" nick="newton"/>
   </enum>
   <enum id="org.gnome.shell.extensions.openmeteo.pressure-unit">
-    <value value="0" nick="hPa"/>
+    <value value="0" nick="mbar"/>
     <value value="1" nick="inHg"/>
     <value value="2" nick="bar"/>
     <value value="3" nick="Pa"/>
     <value value="4" nick="kPa"/>
     <value value="5" nick="atm"/>
-    <value value="6" nick="at"/>
-    <value value="7" nick="Torr"/>
-    <value value="8" nick="psi"/>
-    <value value="9" nick="mmHg"/>
-    <value value="10" nick="mbar"/>
+    <value value="6" nick="mmHg"/>
   </enum>
   <enum id="org.gnome.shell.extensions.openmeteo.wind-speed-unit">
     <value value="0" nick="kph"/>
     <value value="1" nick="mph"/>
     <value value="2" nick="m/s"/>
     <value value="3" nick="knots"/>
-    <value value="4" nick="ft/s"/>
-    <value value="5" nick="Beaufort"/>
+    <value value="4" nick="Beaufort"/>
   </enum>
   <enum id="org.gnome.shell.extensions.openmeteo.position">
     <value value="0" nick="center"/>
@@ -83,11 +73,6 @@
       <default>'kph'</default>
       <summary>Wind Speed Units</summary>
       <description>Choose the units used for wind speed. Allowed values are 'kph', 'mph', 'm/s', 'knots', 'ft/s' or 'Beaufort'.</description>
-    </key>
-    <key type="b" name="wind-direction">
-      <default>false</default>
-      <summary>Wind Direction by Arrows</summary>
-      <description>True to display wind direction through arrows rather than letters.</description>
     </key>
     <!-- 'city' no longer in use, will be migrated to 'locs' -->
     <key type="s" name="city">
@@ -174,30 +159,6 @@
       <default>-1</default>
       <summary>Maximum number of digits after the decimal point for wind speed</summary>
     </key>
-    <!-- DEPRECATED. Use 'custom-keys' instead. -->
-    <key type="s" name="appid">
-      <default>''</default>
-      <summary>DEPRECATED. Your personal API key from openmeteomap.org</summary>
-    </key>
-    <!-- DEPRECATED. Use 'custom-keys' instead. -->
-    <key type="s" name="weatherapidotcom-key">
-      <default>''</default>
-      <summary>DEPRECATED. Your personal API key from WeatherAPI.com</summary>
-    </key>
-    <!-- DEPRECATED. Use 'custom-keys' instead. -->
-    <key type="b" name="use-default-owm-key">
-      <default>true</default>
-      <summary>DEPRECATED. Use the extensions default API key from openmeteomap.org</summary>
-    </key>
-    <!-- DEPRECATED. Use 'custom-keys' instead. -->
-    <key type="b" name="use-default-weatherapidotcom-key">
-      <default>true</default>
-      <summary>DEPRECATED. Use the extensions default API key from WeatherAPI.com</summary>
-    </key>
-    <key type="s" name="geolocation-appid-mapquest">
-      <default>''</default>
-      <summary>Your personal AppKey from developer.mapquest.com</summary>
-    </key>
     <key name="clock-format" enum="org.gnome.shell.extensions.openmeteo.clock-format">
       <default>'system'</default>
       <summary>Time format for hours. Possible values are '24hr' for 24-hour clock, '12hr' for AM/PM, and 'system' to follow the GNOME setting.</summary>
@@ -254,10 +215,6 @@
     <key type="s" name="last-init-error">
       <default>''</default>
       <summary>Empty or the last initialization error message.</summary>
-    </key>
-    <key type="as" name="custom-keys">
-      <default>[ '', '', '' ]</default>
-      <summary>Custom keys for weather providers.</summary>
     </key>
     <key type="b" name="precip-starts-notif">
       <default>false</default>

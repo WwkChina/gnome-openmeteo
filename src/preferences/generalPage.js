@@ -168,12 +168,7 @@ class GeneralPage extends Adw.PreferencesPage
     let temperatureUnits = new Gtk.StringList();
     temperatureUnits.append(_("\u00B0C"));
     temperatureUnits.append(_("\u00B0F"));
-    temperatureUnits.append(_("K"));
-    temperatureUnits.append(_("\u00B0Ra"));
-    temperatureUnits.append(_("\u00B0R\u00E9"));
-    temperatureUnits.append(_("\u00B0R\u00F8"));
-    temperatureUnits.append(_("\u00B0De"));
-    temperatureUnits.append(_("\u00B0N"));
+    temperatureUnits.append(_("K")); 
     let selTempUnit = this._settings.get_enum("unit");
     let unitIsDegs = selTempUnit !== 2;
     let temperatureUnitRow = new Adw.ComboRow({
@@ -188,7 +183,6 @@ class GeneralPage extends Adw.PreferencesPage
     windSpeedUnits.append(_("mph"));
     windSpeedUnits.append(_("m/s"));
     windSpeedUnits.append(_("kn"));
-    windSpeedUnits.append(_("ft/s"));
     windSpeedUnits.append(_("Beaufort"));
     let windSpeedUnitRow = new Adw.ComboRow({
       title: _("Wind Speed"),
@@ -198,21 +192,17 @@ class GeneralPage extends Adw.PreferencesPage
 
     // Pressure
     let pressureUnits = new Gtk.StringList();
-    // hPa
+    pressureUnits.append(_("mbar"));
     pressureUnits.append(_("inHg"));
     pressureUnits.append(_("bar"));
     pressureUnits.append(_("Pa"));
     pressureUnits.append(_("kPa"));
     pressureUnits.append(_("atm"));
-    pressureUnits.append(_("at"));
-    pressureUnits.append(_("Torr"));
-    pressureUnits.append(_("psi"));
     pressureUnits.append(_("mmHg"));
-    pressureUnits.append(_("mbar"));
     let pressureUnitRow = new Adw.ComboRow({
       title: _("Pressure"),
       model: pressureUnits,
-      selected: this._settings.get_enum("pressure-unit") - 1,
+      selected: this._settings.get_enum("pressure-unit"),
     });
 
     // Clock Format
@@ -326,7 +316,7 @@ class GeneralPage extends Adw.PreferencesPage
       this._settings.set_enum("wind-speed-unit", widget.selected);
     });
     pressureUnitRow.connect("notify::selected", (widget) => {
-      this._settings.set_enum("pressure-unit", widget.selected + 1);
+      this._settings.set_enum("pressure-unit", widget.selected);
     });
     clockFormatRow.connect("notify::selected", (widget) => {
       this._settings.set_enum("clock-format", widget.selected);

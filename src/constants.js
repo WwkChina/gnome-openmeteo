@@ -2,11 +2,6 @@ const WeatherUnits = {
   CELSIUS: 0,
   FAHRENHEIT: 1,
   KELVIN: 2,
-  RANKINE: 3,
-  REAUMUR: 4,
-  ROEMER: 5,
-  DELISLE: 6,
-  NEWTON: 7,
 };
 
 const WeatherWindSpeedUnits = {
@@ -14,22 +9,17 @@ const WeatherWindSpeedUnits = {
   MPH: 1,
   MPS: 2,
   KNOTS: 3,
-  FPS: 4,
-  BEAUFORT: 5,
+  BEAUFORT: 4,
 };
 
 const WeatherPressureUnits = {
-  HPA: 0,
+  MBAR: 0,
   INHG: 1,
   BAR: 2,
   PA: 3,
   KPA: 4,
   ATM: 5,
-  AT: 6,
-  TORR: 7,
-  PSI: 8,
-  MMHG: 9,
-  MBAR: 10,
+  MMHG: 6, 
 };
 
 const HiContrastStyle = {
